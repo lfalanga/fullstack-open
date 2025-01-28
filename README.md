@@ -7,6 +7,8 @@ This repository contains the course exercises.
 - [submission-system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen): The submission system.
 - [mozilla](https://www.mozilla.org/en-US/firefox/developer/): Mozilla develop edition.
 - [mermaid](https://github.com/mermaid-js/mermaid#sequence-diagram-docs---live-editor): Mermaid.
+- [vite](https://vite.dev/): Vite.
+- [babel](https://babeljs.io/): Babel.
 
 ## Resources
 
@@ -26,5 +28,10 @@ This repository contains the course exercises.
 - [stackoverflow](https://stackoverflow.com/questions/35062852/npm-vs-bower-vs-browserify-vs-gulp-vs-grunt-vs-webpack): NPM vs. Bower vs. Browserify vs. Gulp vs. Grunt vs. Webpack.
 - [github](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams): Creating Diagrams.
 - [geeksforgeeks](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/): Sequence Diagrams – Unified Modeling Language (UML).
+
+### Part 1
+
+- [react](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md): reavt/prop-types.
+- [react](https://react.dev/reference/react/Fragment): Fragment.
 
 ## ToDos
