@@ -1,0 +1,47 @@
+.success-toast {
+  color: #555;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  padding: 1.1vh 1vw;
+  border: 1px solid green;
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+.info-toast {
+  color: #555;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  padding: 1.1vh 1vw;
+  border: 1px solid yellow;
+  background-color: rgba(255, 255, 0, 0.25);
+}
+
+.error-toast {
+  color: #555;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  padding: 1.1vh 1vw;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.output-toast {
+  color: #333;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  padding: 1.1vh 1vw;
+  border: 1px solid #333;
+  background-color: rgba(51, 51, 51, 0.25);
+}
+
+strong.debugging-property-name:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: larger;
+}
+
+strong.debugging-property-name:hover + span.debugging-property-value {
+  color: green !important;
+  font-size: larger;
+}
