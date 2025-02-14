@@ -1,3 +1,6 @@
 [submodule "part3-notes-backend"]
 	path = part3-notes-backend
 	url = https://github.com/lfalanga/part3-notes-backend.git
+[submodule "foo-submodule"]
+	path = foo-submodule
+	url = https://github.com/lfalanga/foo-submodule.git
