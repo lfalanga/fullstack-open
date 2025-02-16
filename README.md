@@ -29,6 +29,7 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [postman](https://www.postman.com/): Postman.
 - [vscode](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): REST Client.
 - [webstorm](https://www.jetbrains.com/help/webstorm/http-client-in-product-code-editor.html): HTTP Client in Product.
+- [morgan](https://github.com/expressjs/morgan): Morgan.
 - []()
 - []()
 - []()
@@ -156,6 +157,8 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [article](https://www.rfc-editor.org/rfc/rfc9112#name-message-body): Message Body.
 - [express](https://expressjs.com/en/api.html): API: json-parser middleware.
 - [fcc](https://www.freecodecamp.org/news/how-to-use-git-submodules/): How to use git submodules.
+- [http](https://www.rfc-editor.org/rfc/rfc9110.html#name-common-method-properties): Common Method Properties.
+- [express](https://expressjs.com/en/resources/middleware/morgan.html): Morgan.
 - []()
 - []()
 - []()
@@ -241,8 +244,15 @@ fullstackopen/
 ### PowerShell
 
 ```powershell
+# git repositories
+git clone "https://github.com/lfalanga/fullstack-open.git"
+git clone "https://github.com/lfalanga/foo-submodule.git"
+git clone "https://github.com/lfalanga/part3-notes-backend.git"
+# invoking api from powershell
 Invoke-RestMethod -Uri "http://localhost:3001/api/notes/111"
+# pyenv
 pyenv\Scripts\activate
+# git used commands
 git branch -m <oldbranch> <newbranch>
 git fetch --prune
 git branch --unset-upstream
@@ -256,7 +266,7 @@ git submodule add "https://github.com/lfalanga/part3-notes-backend.git" part3-no
 ```json
 {
   "firstName": "John",
-  "lastName": "Doe",
-  "age": 25
+  "lastName": "Lennon",
+  "age": 40
 }
 ```
