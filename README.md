@@ -30,6 +30,12 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [vscode](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): REST Client.
 - [webstorm](https://www.jetbrains.com/help/webstorm/http-client-in-product-code-editor.html): HTTP Client in Product.
 - [morgan](https://github.com/expressjs/morgan): Morgan.
+- [heroku](http://heroku.com/): Heroku.
+- [heroku](https://www.heroku.com/students): Heroku for Students.
+- [fly.io](https://fly.io/): Fly.io.
+- [render](https://render.com/): Render.com.
+- [replit](https://replit.com/): Replit.com.
+- [codesandbox](https://codesandbox.io): CodeSandbox.io.
 - []()
 - []()
 - []()
@@ -159,6 +165,9 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [fcc](https://www.freecodecamp.org/news/how-to-use-git-submodules/): How to use git submodules.
 - [http](https://www.rfc-editor.org/rfc/rfc9110.html#name-common-method-properties): Common Method Properties.
 - [express](https://expressjs.com/en/resources/middleware/morgan.html): Morgan.
+- [wiki](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing): Cross-origin resource sharing.
+- [mdn](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy): Same-origin policy.
+- [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS): CORS.
 - []()
 - []()
 - []()
@@ -259,6 +268,11 @@ git branch --unset-upstream
 git ls-files --stage .
 git rm --cached -r .
 git submodule add "https://github.com/lfalanga/part3-notes-backend.git" part3-notes-backend
+# public ip address
+nslookup myip.opendns.com. resolver1.opendns.com
+Invoke-WebRequest ifconfig.me/ip
+(Invoke-WebRequest ifconfig.me/ip).Content
+netsh winhttp show proxy
 ```
 
 ### JSON
