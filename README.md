@@ -300,7 +300,7 @@ heroku buildpacks:set heroku/nodejs
 heroku buildpacks:add --app APP_NAME heroku-community/nginx
 heroku open
 heroku logs --tail
-git commit --allow-empty -m "Trigger Heroku deploy after modifiying buildpack."
+git commit --allow-empty -m "Before returning ATOS laptop."
 git push heroku master
 ```
 
