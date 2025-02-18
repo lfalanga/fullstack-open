@@ -36,6 +36,7 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [render](https://render.com/): Render.com.
 - [replit](https://replit.com/): Replit.com.
 - [codesandbox](https://codesandbox.io): CodeSandbox.io.
+- [npm](https://www.npmjs.com/package/pac-resolver): pac-resolver.
 - []()
 - []()
 - []()
@@ -168,6 +169,17 @@ This repository contains the [course](https://fullstackopen.com/en/) exercises.
 - [wiki](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing): Cross-origin resource sharing.
 - [mdn](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy): Same-origin policy.
 - [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS): CORS.
+- [heroku](https://devcenter.heroku.com/articles/heroku-cli): Heroku CLI.
+- [heroku](https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy): Using an HTTP Proxy.
+- [heroku](https://devcenter.heroku.com/articles/authentication): Authentication.
+- [heroku](https://devcenter.heroku.com/articles/deploying-nodejs): Deploying Node.js.
+- [heroku](https://devcenter.heroku.com/articles/troubleshooting-node-deploys): Troubleshooting Node Deploys.
+- [heroku](https://devcenter.heroku.com/articles/git): Git.
+- [vite](https://vite.dev/guide/build.html): Build.
+- [heroku](https://devcenter.heroku.com/articles/procfile): Procfile.
+- [vite](https://v2.vitejs.dev/guide/static-deploy.html#heroku): Static Deploy.
+- [heroku](https://devcenter.heroku.com/articles/managing-buildpacks): Managing Buildpacks.
+- [heroku](https://github.com/heroku/heroku-buildpack-nginx/blob/main/static.md): Heroku Buildpack: Nginx for static sites.
 - []()
 - []()
 - []()
@@ -273,6 +285,23 @@ nslookup myip.opendns.com. resolver1.opendns.com
 Invoke-WebRequest ifconfig.me/ip
 (Invoke-WebRequest ifconfig.me/ip).Content
 netsh winhttp show proxy
+# heroku
+$env:HTTP_PROXY="http://127.0.0.1:9000/localproxy-9b964a38.pac"
+heroku login
+heroku create part3-notes-backend
+# Creating ⬢ part3-notes-backend... done
+# https://part3-notes-backend-e8fea41303a6.herokuapp.com/ | https://git.heroku.com/part3-notes-backend.git
+heroku buildpacks
+heroku buildpacks:set https://github.com/heroku/heroku-buildpack-static.git   # dreprecated
+heroku buildpacks:remove https://github.com/heroku/heroku-buildpack-static.git
+heroku buildpacks:add heroku-community/nginx -a part3-notes-backend
+heroku buildpacks:remove heroku-community/nginx
+heroku buildpacks:set heroku/nodejs
+heroku buildpacks:add --app APP_NAME heroku-community/nginx
+heroku open
+heroku logs --tail
+git commit --allow-empty -m "Trigger Heroku deploy after modifiying buildpack."
+git push heroku master
 ```
 
 ### JSON
